@@ -1,0 +1,48 @@
+.left-intro { 
+    background-image: url(../../../public/clouds.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-left: 15%;
+}
+
+/* .left-intro:before {
+    content: "";
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: var(--text1-transparent);
+    margin-left: -60px;
+    border: solid var(--text1) 1px;
+    z-index: -4;
+}
+*/
+
+.about-me-txt{
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    margin-top: 20px !important;
+}
+
+.about-me-txt > span {
+    color: var(--secondary);
+}
+
+.left-intro > h1 {
+    border-bottom: 4px var(--secondary) solid;
+    padding-bottom: 10px;
+    width: -moz-fit-content;
+    font-weight: 400;
+    width: fit-content;
+    color: var(--text1);
+}
+
+.left-intro > span {
+    padding-top: 20px;
+}
+
+.about-me-container {
+    margin-bottom: 200px;
+}

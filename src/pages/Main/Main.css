@@ -1,0 +1,134 @@
+:root {
+    /*light mode*/
+    --primary: #3494c7;
+    --gradiant: #6DB9DB;
+    --secondary: #F4E2A2;
+    --accent: #d8f1f9;
+    --common-bg: #0a6fa6;
+    --text1: #c3fbff;
+    --text2: #0C090D;
+    --text3: #fff;
+    --text1-transparent: #c3fbff5a;
+    --text2-transparent: #0c090d61;
+    --btn: rgba(53, 112, 160, 0.262);
+    overflow-x: hidden;
+}
+
+[data-theme="dark"] {
+    /*dark mode*/
+    --primary: #292A42;
+    --gradiant: #3c456f;
+    --secondary: #6767e8;
+    --accent: #8295CC;
+    --common-bg: #101126;
+    --text1: #9db3f5;
+    --text2: #fff;
+    --text3: #000;
+    --text1-transparent: #9db3f565;
+    --text2-transparent: rgba(255, 255, 255, 0.344);
+    --btn: rgba(166, 157, 197, 0.1);
+}
+
+body {
+    padding-top: 60px;
+    background-image: linear-gradient(to right, var(--primary), var(--gradiant), var(--primary)); 
+    color: var(--text2);
+}
+
+a {
+    color: var(--text1);
+}
+
+.about-me-container {
+    display: flex;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+    position: fixed;
+    display: flex;
+    margin: 3%;
+    gap: 4px;
+    z-index: 200;
+}
+
+.toggle-theme-wrapper span {
+    font-size: 28px;
+}
+
+.toggle-theme {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 60px;
+}
+
+.toggle-theme input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider {
+    background-color: cornflowerblue;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.AppBar > div {
+    justify-content: space-between;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid #000;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--gradiant);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--text3);
+    border: 1px solid rgba(124,124,215,1);
+}

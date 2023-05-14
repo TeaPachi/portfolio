@@ -1,0 +1,36 @@
+.AppBar {
+    background-color: transparent !important;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--common-bg) !important;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: calc(50vw - 120px);
+    font-size: 24px;
+}
+
+.nav-links > a {
+    padding: 10%;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    color: var(--text2);
+    border-bottom: var(--text2) solid 2px;
+}
+/* 
+.nav-links > a:active {
+    color: red;
+} */
+
+.contact-me-btn{
+    background-color: var(--secondary) !important;
+    color: var(--text2) !important;  
+    padding: 15px !important;
+}
