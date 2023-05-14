@@ -12,7 +12,7 @@ const Projects = () => {
         <ProjectCard/>
       </Grid>
       <Box className="github-link-wrapper">
-        <Button href="https://github.com/TeaPachi" className="link-to-github" align="right">See more projects →</Button>
+        <Button href="https://github.com/TeaPachi" className="link-to-github" align="right" disableRipple>See more projects →</Button>
       </Box>
     </Box>
   )
